@@ -1,7 +1,5 @@
 # Automated Cloud Incident Response & SIEM Pipeline on GCP
 
-![GCP SIEM Architecture](./assets/architecture.png)
-
 ## Executive Summary
 In enterprise cloud environments, compromised IAM credentials allow attackers to execute valid administrative actions—such as granting elevated permissions or creating rogue service account keys—without triggering traditional operating system alarms. 
 

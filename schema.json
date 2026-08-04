@@ -1,0 +1,44 @@
+[
+  {
+    "name": "timestamp",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Timestamp when the security event occurred"
+  },
+  {
+    "name": "principal_email",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Email address of the user or service account executing the action"
+  },
+  {
+    "name": "method_name",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "GCP API method invoked (e.g., SetIamPolicy)"
+  },
+  {
+    "name": "resource_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Target GCP resource affected by the change"
+  },
+  {
+    "name": "caller_ip",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Originating IP address of the caller"
+  },
+  {
+    "name": "severity",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Assigned incident severity (INFORMATIONAL, HIGH, CRITICAL)"
+  },
+  {
+    "name": "mitre_technique",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Mapped MITRE ATT&CK technique (e.g., T1098 - Account Manipulation)"
+  }
+]
